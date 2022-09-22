@@ -1,4 +1,4 @@
-﻿{
+{
     "files.exclude":
     {
         "**/.DS_Store":true,
@@ -63,4 +63,5 @@
 	"editor.useTabStops": false,
 	"editor.stickyTabStops": true,
 	"csharp.suppressDotnetInstallWarning": true,
+	"omnisharp.organizeImportsOnFormat": true,
 }
