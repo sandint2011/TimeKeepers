@@ -1,7 +1,5 @@
 # TimeKeepers
 
-##### Table of Contents
-
 [Installation & Setup](#installation-and-setup)
 
 <a name="installation-and-setup"/>
