@@ -1,7 +1,7 @@
 # TimeKeepers
 
 ### Contents
-* [Installation & Detup](https://github.com/sandint2011/TimeKeepers/blob/main/README.md#installation--setup)
+* [Installation & Setup](https://github.com/sandint2011/TimeKeepers/blob/main/README.md#installation--setup)
 
 * [C# Coding Conventions](https://github.com/sandint2011/TimeKeepers/blob/main/README.md#c-coding-conventions)
 
