@@ -63,6 +63,8 @@
 	* *C#*
 
 	* *C# Snippets*
+	
+	* *Prettier - Code Formatter*
 
 	* *Debugger for Unity*
 
