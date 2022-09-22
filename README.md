@@ -190,7 +190,9 @@ Write only one statement per line.
 // Good.
 player.resetHealth();
 player.resetExperience();
+```
 
+```c#
 // Bad.
 player.ResetHealth(); player.ResetExperience();
 ```
@@ -201,10 +203,14 @@ Write only one declaration per line.
 // Good.
 int x;
 int y;
+```
 
+```c#
 // Bad.
 int x; int y;
+```
 
+```c#
 // Also bad.
 int x, y;
 ```
@@ -219,7 +225,9 @@ int b = 2;
 int c = 3;
 
 string x = "Hello";
+```
 
+```c#
 // Bad.
 int a = 1;
 int b = 2;
@@ -250,7 +258,9 @@ class Player
         Experience = 0;
     }
 }
+```
 
+```c#
 // Bad.
 class Player
 {
@@ -286,7 +296,9 @@ class Player
         Experience = 0;
     }
 }
+```
 
+```c#
 // Bad.
 class Player
 {
@@ -318,7 +330,9 @@ class Player
         experience = 0;
     }
 }
+```
 
+```c#
 // Bad.
 class Player
 {
@@ -338,19 +352,25 @@ If continuation lines are not indented automatically, indent them one tab stop (
 ```c#
 // Ideal, but too many parameters might make for a long line.
 SetPosition(player.GetX(), player.GetY(), player.GetZ());
+```
 
+```c#
 // Good.
 SetPosition(
     player.GetX(),
     player.GetY(),
     player.GetZ()
 );
-    
+```
+
+```c#
 // Bad.
 SetPosition(player.GetX(),
             player.GetY(),
             player.GetZ());
-            
+```
+
+```c#            
 // Also bad.
 SetPosition(
             player.GetX(),
@@ -364,20 +384,26 @@ Continuous lines should end their parenthesis on their original indentation, wit
 ```c#
 // Ideal, but long lines might need breaking up.
 Vector3(x, y, z);
+```
 
+```c#
 // Good.
 Vector3(
     x,
     y,
     z
 );
+```
 
+```c#
 // Bad.
 Vector3(x,
     y,
     z
 );
+```
 
+```c#
 // Bad.
 Vector3(x,
     y, z);
@@ -394,7 +420,9 @@ Place comments on their own line, not at the end of code lines.
 ```c#
 // Good.
 Foo();
+```
 
+```c#
 Bar(); // Bad.
 ```
 
@@ -404,15 +432,21 @@ Don't create formatted blocks of asterisks around comments.
 // Please
 // do
 // this.
+```
 
+```c#
 // Or this.
+```
 
+```c#
 /* Please
  * don't
  * do
  * this.
  */
- 
+```
+
+```c#
 /* Please don't do this either. */
 ```
 
@@ -423,10 +457,14 @@ Concatinate strings with string interpolation, rather than concatination, unless
 ```c#
 // Good.
 string fullName = $"{firstName}, {lastName}";
+```
 
+```c#
 // Good, since there are only variables and no hardcoded strings.
 string fullName = fullName + commaSeparator + lastName;
+```
 
+```c#
 // Bad.
 string fullName = firstName + ", " + lastName;
 ```
@@ -441,7 +479,9 @@ Don't do them.
 // Good.
 string sentence = "This is a string.";
 int number = 5;
+```
 
+```c#
 // Bad.
 var sentence = "This is a string.";
 var number = 5;
@@ -462,7 +502,9 @@ Use concise array initialization syntax in the declaration line.
 ```c#
 // Good.
 string[] letters = { "A", "B", "C" };
+```
 
+```c#
 // Bad.
 string[] letters = new string[] { "A", "B", "C" };
 ```
@@ -481,7 +523,9 @@ catch (System.IndexOutOfRangeException e)
 {
     Debug.Log("Index out of range: {0}", index);
 }
+```
 
+```c#
 // Bad.
 try
 {
