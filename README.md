@@ -209,6 +209,130 @@ int x; int y;
 int x, y;
 ```
 
+Never use more than 1 blank line between code or comment lines.
+
+```c#
+// Good.
+int a = 1;
+int b = 2;
+
+int c = 3;
+
+string x = "Hello";
+
+// Bad.
+int a = 1;
+int b = 2;
+
+int c = 3;
+
+
+
+string x = "Hello";
+```
+
+Separate block elements methods from each other and from fields and parameters with a blank line. Fields and properties can be grouped together, though.
+
+```c#
+// Good.
+class Player
+{
+    public int Health { get; set; }
+    public int Experience { get; set; }
+    
+    public void ResetHealth()
+    {
+        Health = 100;
+    }
+    
+    public void ResetExperience()
+    {
+        Experience = 0;
+    }
+}
+
+// Bad.
+class Player
+{
+    public int Health { get; set; }
+    public int Experience { get; set; }
+    public void ResetHealth()
+    {
+        Health = 100;
+    }
+    public void ResetExperience()
+    {
+        Experience = 0;
+    }
+}
+```
+
+Do not place fields or properties between methods.
+
+```c#
+// Good.
+class Player
+{
+    public int Health { get; set; }
+    public int Experience { get; set; }
+    
+    public void ResetHealth()
+    {
+        Health = 100;
+    }
+    
+    public void ResetExperience()
+    {
+        Experience = 0;
+    }
+}
+
+// Bad.
+class Player
+{
+    public int Health { get; set; }
+    
+    public void ResetHealth()
+    {
+        Health = 100;
+    }
+    
+    public int Experience { get; set; }
+    
+    public void ResetExperience()
+    {
+        Experience = 0;
+    }
+}
+```
+
+Do not start or end blocks with blank lines.
+
+```c#
+// Good.
+class Player
+{
+    void Ready()
+    {
+        health = 100;
+        experience = 0;
+    }
+}
+
+// Bad.
+class Player
+{
+    
+    void Ready()
+    {
+        
+        health = 100;
+        experience = 0;
+    }
+    
+}
+```
+
 If continuation lines are not indented automatically, indent them one tab stop (4 spaces).
 
 ```c#
