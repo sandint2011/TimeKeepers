@@ -363,15 +363,8 @@ SetPosition(
 );
 ```
 
-```c#
-// Bad.
-SetPosition(player.GetX(),
-            player.GetY(),
-            player.GetZ());
-```
-
 ```c#            
-// Also bad.
+// Bad.
 SetPosition(
             player.GetX(),
             player.GetY(),
