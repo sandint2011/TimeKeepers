@@ -404,9 +404,19 @@ Vector3(x,
 
 ## Commenting conventions.
 
-Begin comments with a capital letter.
+Begin comments with a space and a capital letter.
 
 End comments with a period.
+
+Do not add more than 2 slashes at the start of a comment.
+
+```c#
+// Good.
+```
+
+```c#
+///bad
+```
 
 Place comments on their own line, not at the end of code lines.
 
