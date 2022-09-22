@@ -1,8 +1,5 @@
 # TimeKeepers
 
-[Installation & Setup](#installation-and-setup)
-
-<a name="installation-and-setup"/>
 # Installation & Setup
 
 ## GitHub
